@@ -1,0 +1,132 @@
+---
+---
+{% assign portfolio = site.data.portfolio %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="theme-color" content="#f4efe7">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/assets/og.png' | absolute_url }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ site.title }}">
+  <meta name="twitter:description" content="Clear controls. Calmer decisions.">
+  <meta name="twitter:image" content="{{ '/assets/og.png' | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <div class="site-shell" id="top">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="{{ portfolio.name }}, home">
+        <strong>{{ portfolio.name }}</strong>
+        <span>{{ portfolio.role }}</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#expertise">Expertise</a>
+        <a href="#journey">Journey</a>
+        <a href="#credentials">Credentials</a>
+        <a class="nav-cta" href="{{ portfolio.linkedin }}" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-heading">
+          <p class="eyebrow">{{ portfolio.hero.eyebrow }}</p>
+          <h1 id="hero-title">{{ portfolio.hero.line_one }}<br><em>{{ portfolio.hero.line_two }}</em></h1>
+        </div>
+        <div class="hero-copy">
+          <p>{{ portfolio.hero.summary }}</p>
+          <div class="focus-list" aria-label="Core focus areas">
+            {% for item in portfolio.hero.focus %}<span>{{ item }}</span>{% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <section class="proof" aria-label="Selected consulting outcomes">
+        <p class="proof-intro">{{ portfolio.proof_intro }}</p>
+        {% for proof in portfolio.proofs %}
+        <div class="proof-item"><strong>{{ proof.value }}</strong><span>{{ proof.label }}</span></div>
+        {% endfor %}
+      </section>
+
+      <section class="story-grid" aria-label="Expertise and professional profile">
+        <article class="expertise-panel" id="expertise">
+          <p class="section-label">How I can help</p>
+          <h2>Make risk work for people.</h2>
+          <div class="expertise-list">
+            {% for item in portfolio.expertise %}<span>{{ item }}</span>{% endfor %}
+          </div>
+        </article>
+        <article class="profile-panel">
+          <p class="section-label">The through-line</p>
+          <h2>{{ portfolio.profile.title }}</h2>
+          <p>{{ portfolio.profile.summary }}</p>
+          <div class="profile-pillars" aria-label="Professional strengths">
+            {% for item in portfolio.profile.pillars %}<span><b>0{{ forloop.index }}</b>{{ item }}</span>{% endfor %}
+          </div>
+        </article>
+      </section>
+
+      <section class="journey-section" id="journey" aria-labelledby="journey-title">
+        <div class="journey-intro">
+          <p class="section-label">One connected journey</p>
+          <h2 id="journey-title">A global perspective, built step by step.</h2>
+          <p>{{ portfolio.journey_intro }}</p>
+        </div>
+        <div class="career-path">
+          {% for step in portfolio.journey %}
+          <article class="career-step">
+            <div class="career-meta"><time>{{ step.period }}</time><span>{{ step.location }}</span></div>
+            <div class="career-dot" aria-hidden="true"></div>
+            <div class="career-content">
+              <span class="career-marker">{{ step.marker }}</span>
+              <h3>{{ step.title }}</h3>
+              <p class="career-subtitle">{{ step.subtitle }}</p>
+              <p>{{ step.summary }}</p>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section class="credentials-grid" id="credentials" aria-label="Credentials and contribution">
+        <article>
+          <p class="section-label">Credentials</p>
+          <h2>Building depth across assurance, security, and technology.</h2>
+          <ul class="quiet-list">
+            {% for credential in portfolio.credentials %}<li>{{ credential }}</li>{% endfor %}
+          </ul>
+        </article>
+        <article>
+          <p class="section-label">Knowledge sharing</p>
+          <h2>Contributing to a more accessible security community.</h2>
+          {% for item in portfolio.knowledge %}
+          <div class="detail-item"><strong>{{ item.title }}</strong><span>{{ item.summary }}</span></div>
+          {% endfor %}
+        </article>
+      </section>
+
+      <section class="closing" aria-labelledby="closing-title">
+        <div><p class="section-label">Let&apos;s connect</p><h2 id="closing-title">{{ portfolio.closing.title }}</h2></div>
+        <div class="closing-copy">
+          <p>{{ portfolio.closing.summary }}</p>
+          <a class="primary-cta" href="{{ portfolio.linkedin }}" target="_blank" rel="noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer><span>{{ portfolio.name }} · {{ portfolio.role }}</span><a href="#top">Back to top ↑</a></footer>
+  </div>
+</body>
+</html>
+
