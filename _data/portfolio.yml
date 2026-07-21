@@ -1,0 +1,95 @@
+name: Jasmine Uyen Le
+role: GRC Consultant
+linkedin: https://www.linkedin.com/in/hauyenle/
+
+hero:
+  eyebrow: Thoughtful governance for complex environments
+  line_one: Clear controls.
+  line_two: Calmer decisions.
+  summary: I bring a global business perspective and project management discipline to GRC—helping organizations turn risk, compliance, and emerging technology into practical, accountable ways of working.
+  focus:
+    - Risk Management
+    - IT Internal Audit
+    - Compliance
+    - AI-enabled GRC
+
+proof_intro: A practical partner from first question to lasting control.
+proofs:
+  - value: 5+
+    label: financial institution clients supported
+  - value: Zero
+    label: major external audit findings
+  - value: 30%
+    label: less GRC operational workload through standardization
+
+expertise:
+  - IT audit & control assessment
+  - Information risk assessments
+  - External audit support
+  - Remediation action plans
+  - Policy & procedure development
+  - Incident response & business continuity
+
+profile:
+  title: Project discipline. Global perspective. GRC expertise.
+  summary: My career has moved across industries, markets, and cultures, but the work has always centered on the same skill—translating complexity into a plan that people can execute with confidence.
+  pillars:
+    - Structure the work
+    - Connect diverse stakeholders
+    - Govern technology responsibly
+
+journey_intro: From project management in Vietnam to global business in Dubai and Singapore, each chapter has strengthened how I manage work, read risk, collaborate across cultures, and apply technology with care.
+journey:
+  - period: "2019"
+    location: Danang, Vietnam
+    marker: Foundation
+    title: Project management foundation
+    subtitle: University of Science and Technology — University of Danang
+    summary: Graduated with First Class Honours in Construction Economics and Project Management, building a disciplined foundation in planning, coordination, cost awareness, and delivery.
+  - period: 2019—2020
+    location: Vietnam · United States clients
+    marker: Execution
+    title: Turning plans into technical delivery
+    subtitle: MiTek Vietnam · Estimator
+    summary: Applied project discipline in a customer-facing role, delivering technical solutions for US clients across projects valued from $50K to $5M.
+  - period: 2021—2022
+    location: Singapore · Four markets
+    marker: Analysis
+    title: Building a regional, data-driven perspective
+    subtitle: Moving Walls · Data Analyst Intern
+    summary: Delivered real-time analytics and forecasting across four markets, achieving 90% planning accuracy and learning to turn complex data into decisions for diverse stakeholders.
+  - period: "2022"
+    location: Dubai & Singapore
+    marker: Global
+    title: Expanding into global digital business
+    subtitle: S P Jain School of Global Management · Master of Global Business
+    summary: Deepened my international perspective through Digital Business Management—connecting technology adoption, strategy, and cross-cultural collaboration.
+  - period: 2023—2024
+    location: Singapore · Regulated finance
+    marker: GRC
+    title: Specializing in governance, risk, and compliance
+    subtitle: EvvoLabs · Information Security & Risk Consultant
+    summary: Led risk assessments, strengthened policies, supported audits, and improved incident readiness for 5+ financial institution clients—with zero major external audit findings and more efficient GRC operations.
+  - period: Now
+    location: Global practice
+    marker: GRC + AI
+    title: Bringing AI into practical GRC work
+    subtitle: AI-enabled workflows · ISO 27001 readiness project
+    summary: I work with AI to accelerate research, control mapping, evidence review, and first-draft analysis—while keeping human judgment, traceability, and accountability at the center. In parallel, I am developing an ISO 27001 readiness platform that turns control gaps into prioritized roadmaps.
+
+credentials:
+  - Certified in Cybersecurity (CC) — ISC2
+  - Fortinet NSE Levels 1–3
+  - ISO/IEC 27001 Lead Auditor — In progress
+  - Microsoft SC-900 — In progress
+
+knowledge:
+  - title: World of Cybersecurity Podcast
+    summary: Co-hosted weekly conversations on cyber threats, GRC trends, and security practices.
+  - title: Cyber Threat Intelligence Workshop
+    summary: Guest speaker on source-code security, access controls, and secrets management.
+
+closing:
+  title: Good governance begins with a clear conversation.
+  summary: If you are building a more audit-ready, AI-aware, resilient, and practical control environment, I would be glad to hear what you are working on.
+
